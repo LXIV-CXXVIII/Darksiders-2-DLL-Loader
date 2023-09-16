@@ -1,0 +1,25 @@
+﻿  Assembling bulletProt.asm...
+bulletProt.asm(1): error A2013: .MODEL must precede this directive
+bulletProt.asm(3): error A2034: must be in segment block : bulletProt
+bulletProt.asm(5): error A2034: must be in segment block
+bulletProt.asm(6): error A2034: must be in segment block
+bulletProt.asm(7): error A2034: must be in segment block
+bulletProt.asm(8): error A2034: must be in segment block
+bulletProt.asm(10): error A2034: must be in segment block
+bulletProt.asm(11): error A2034: must be in segment block
+bulletProt.asm(12): error A2034: must be in segment block
+bulletProt.asm(13): error A2034: must be in segment block
+bulletProt.asm(14): error A2034: must be in segment block
+bulletProt.asm(15): error A2034: must be in segment block
+bulletProt.asm(16): error A2034: must be in segment block
+bulletProt.asm(17): error A2034: must be in segment block
+bulletProt.asm(18): error A2034: must be in segment block
+bulletProt.asm(19): error A2034: must be in segment block
+bulletProt.asm(20): error A2034: must be in segment block
+bulletProt.asm(21): error A2034: must be in segment block
+bulletProt.asm(22): error A2034: must be in segment block
+bulletProt.asm(23): error A2034: must be in segment block
+bulletProt.asm(24): error A2034: must be in segment block
+bulletProt.asm(26): error A2034: must be in segment block
+bulletProt.asm(28): fatal error A1010: unmatched block nesting : bulletProt
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\BuildCustomizations\masm.targets(69,5): error MSB3721: The command "ml.exe /c /nologo /Zi /Fo"Release\bulletProt.obj" /W3 /errorReport:prompt  /TabulletProt.asm" exited with code 1.

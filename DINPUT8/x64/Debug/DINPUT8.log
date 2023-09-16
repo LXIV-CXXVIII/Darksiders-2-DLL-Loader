@@ -1,0 +1,20 @@
+﻿  Assembling bulletProt.asm...
+  dinputWrapper.cpp
+  dllmain.cpp
+c:\users\loki\desktop\ce stuff\dinput8\dinput8\dinput8\dllmain.cpp(76): warning C4311: 'type cast': pointer truncation from 'void *' to 'DWORD'
+c:\users\loki\desktop\ce stuff\dinput8\dinput8\dinput8\dllmain.cpp(76): warning C4302: 'type cast': truncation from 'void *' to 'DWORD'
+c:\users\loki\desktop\ce stuff\dinput8\dinput8\dinput8\dllmain.cpp(79): warning C4311: 'type cast': pointer truncation from 'void *' to 'DWORD'
+c:\users\loki\desktop\ce stuff\dinput8\dinput8\dinput8\dllmain.cpp(79): warning C4302: 'type cast': truncation from 'void *' to 'DWORD'
+c:\users\loki\desktop\ce stuff\dinput8\dinput8\dinput8\dllmain.cpp(79): warning C4312: 'type cast': conversion from 'DWORD' to 'DWORD *' of greater size
+c:\users\loki\desktop\ce stuff\dinput8\dinput8\dinput8\dllmain.cpp(93): warning C4312: 'type cast': conversion from 'DWORD' to 'void *' of greater size
+  stdafx.cpp
+  Generating Code...
+  buffer.c
+  hde32.c
+  hde64.c
+  hook.c
+  trampoline.c
+  Generating Code...
+     Creating library C:\Users\Loki\Desktop\CE stuff\DINPUT8\DINPUT8\x64\Debug\DINPUT8.lib and object C:\Users\Loki\Desktop\CE stuff\DINPUT8\DINPUT8\x64\Debug\DINPUT8.exp
+DINPUT8.exp : warning LNK4070: /OUT:DINPUT8.dll directive in .EXP differs from output filename 'C:\Users\Loki\Desktop\CE stuff\DINPUT8\DINPUT8\x64\Debug\DINPUT8.exe'; ignoring directive
+  DINPUT8.vcxproj -> C:\Users\Loki\Desktop\CE stuff\DINPUT8\DINPUT8\x64\Debug\DINPUT8.exe

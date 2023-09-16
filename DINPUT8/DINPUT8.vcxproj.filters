@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Resource Files\MinHook">
+      <UniqueIdentifier>{69e52295-9617-4813-95af-b627a6dc4d2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\XorString.h">
+      <UniqueIdentifier>{10c750b7-cb75-480a-a0de-63eef65ade89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_asm USELESS BRO LMAO">
+      <UniqueIdentifier>{243d2f4b-9eab-434e-957a-4be72e84e394}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libLoad">
+      <UniqueIdentifier>{79d9f383-4017-4518-af2f-7535de6d5e2d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MinHook\src\trampoline.h">
+      <Filter>Resource Files\MinHook</Filter>
+    </ClInclude>
+    <ClInclude Include="MinHook\src\buffer.h">
+      <Filter>Resource Files\MinHook</Filter>
+    </ClInclude>
+    <ClInclude Include="MinHook\src\HDE\hde64.h">
+      <Filter>Resource Files\MinHook</Filter>
+    </ClInclude>
+    <ClInclude Include="MinHook\src\HDE\pstdint.h">
+      <Filter>Resource Files\MinHook</Filter>
+    </ClInclude>
+    <ClInclude Include="MinHook\src\HDE\table32.h">
+      <Filter>Resource Files\MinHook</Filter>
+    </ClInclude>
+    <ClInclude Include="MinHook\src\HDE\table64.h">
+      <Filter>Resource Files\MinHook</Filter>
+    </ClInclude>
+    <ClInclude Include="MinHook\src\HDE\hde32.h">
+      <Filter>Resource Files\MinHook</Filter>
+    </ClInclude>
+    <ClInclude Include="MinHook\include\MinHook.h">
+      <Filter>Resource Files\MinHook</Filter>
+    </ClInclude>
+    <ClInclude Include="dinputWrapper.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dinput.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XorString.h">
+      <Filter>Resource Files\XorString.h</Filter>
+    </ClInclude>
+    <ClInclude Include="LibraryLoader.h">
+      <Filter>libLoad</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MinHook\src\trampoline.c">
+      <Filter>Resource Files\MinHook</Filter>
+    </ClCompile>
+    <ClCompile Include="MinHook\src\buffer.c">
+      <Filter>Resource Files\MinHook</Filter>
+    </ClCompile>
+    <ClCompile Include="MinHook\src\hook.c">
+      <Filter>Resource Files\MinHook</Filter>
+    </ClCompile>
+    <ClCompile Include="MinHook\src\HDE\hde32.c">
+      <Filter>Resource Files\MinHook</Filter>
+    </ClCompile>
+    <ClCompile Include="MinHook\src\HDE\hde64.c">
+      <Filter>Resource Files\MinHook</Filter>
+    </ClCompile>
+    <ClCompile Include="dinputWrapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dinput8.def">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="MASMexample.asm">
+      <Filter>_asm USELESS BRO LMAO</Filter>
+    </MASM>
+  </ItemGroup>
+</Project>
