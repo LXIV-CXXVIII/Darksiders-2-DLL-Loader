@@ -6,4 +6,3 @@
 // Windows Header Files:
 #include <windows.h>
 #include <fstream>
-//#include "MinHook/include/MinHook.h" //detour x86&x64

@@ -16,7 +16,7 @@ DWORD WINAPI MainThread() {
 #ifdef DEBUG
 	FILE* fp;
 	AllocConsole();
-	SetConsoleTitleA("DS2LM - Debug Console");
+	SetConsoleTitleA("DLL Loader for Darksiders 2");
 	freopen_s(&fp, "CONOUT$", "w", stdout);
 #endif
 	load_dll_in_directory(dllModFolderName, dlls);
@@ -37,25 +37,6 @@ int WINAPI tZwSetInformationThread(HANDLE threadHandle, THREAD_INFORMATION_CLASS
 
 BOOL InitInstance(HMODULE hModule)
 {
-	/*
-	if (MH_Initialize() != MH_OK)
-	{
-		ExitProcess(0xDEADBEEF);
-
-	}
-
-	// or you can use the new helper function like this.
-	if (MH_CreateHookApi(L"ntdll", "NtSetInformationThread", &tZwSetInformationThread, reinterpret_cast<LPVOID*>(&fpZwSetInformationThread)) != MH_OK)
-	{
-		ExitProcess(MH_CreateHookApi(L"ntdll", "NtSetInformationThread", &tZwSetInformationThread, reinterpret_cast<LPVOID*>(&fpZwSetInformationThread)));
-	}
-
-	if (MH_EnableHook(MH_ALL_HOOKS) != MH_OK)
-	{
-		ExitProcess(0xBEEEEEEF);
-	}
-	*/
-
 	// Load the real dinput8.dll
 	HMODULE hMod;
 	wchar_t dllPath[MAX_PATH];
@@ -65,7 +46,7 @@ BOOL InitInstance(HMODULE hModule)
 	oDirectInput8Create = (tDirectInput8Create)GetProcAddress(hMod, "DirectInput8Create");
 
 	// Call the main thread
-//    CreateThread(nullptr, 0, (LPTHREAD_START_ROUTINE)&Begin, hModule, 0, nullptr);
+    // CreateThread(nullptr, 0, (LPTHREAD_START_ROUTINE)&Begin, hModule, 0, nullptr);
 
 	MainThread();
 

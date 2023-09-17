@@ -1,11 +1,9 @@
-﻿  buffer.c
-  hde32.c
-  hde64.c
-  hook.c
-  trampoline.c
+﻿  dinputWrapper.cpp
+  dllmain.cpp
+  stdafx.cpp
      Creating library C:\Users\Loki\Desktop\DS2DLLLOAD\DLL for Darksiders\DINPUT8\x64\Release\DINPUT8.lib and object C:\Users\Loki\Desktop\DS2DLLLOAD\DLL for Darksiders\DINPUT8\x64\Release\DINPUT8.exp
   Generating code
-  0 of 164 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+  2 of 164 functions ( 1.2%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
     0 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
