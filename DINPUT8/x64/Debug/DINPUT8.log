@@ -1,20 +1,20 @@
-﻿  Assembling bulletProt.asm...
+﻿  Assembling MASMexample.asm...
   dinputWrapper.cpp
   dllmain.cpp
-c:\users\loki\desktop\ce stuff\dinput8\dinput8\dinput8\dllmain.cpp(76): warning C4311: 'type cast': pointer truncation from 'void *' to 'DWORD'
-c:\users\loki\desktop\ce stuff\dinput8\dinput8\dinput8\dllmain.cpp(76): warning C4302: 'type cast': truncation from 'void *' to 'DWORD'
-c:\users\loki\desktop\ce stuff\dinput8\dinput8\dinput8\dllmain.cpp(79): warning C4311: 'type cast': pointer truncation from 'void *' to 'DWORD'
-c:\users\loki\desktop\ce stuff\dinput8\dinput8\dinput8\dllmain.cpp(79): warning C4302: 'type cast': truncation from 'void *' to 'DWORD'
-c:\users\loki\desktop\ce stuff\dinput8\dinput8\dinput8\dllmain.cpp(79): warning C4312: 'type cast': conversion from 'DWORD' to 'DWORD *' of greater size
-c:\users\loki\desktop\ce stuff\dinput8\dinput8\dinput8\dllmain.cpp(93): warning C4312: 'type cast': conversion from 'DWORD' to 'void *' of greater size
+C:\Users\Loki\Desktop\DS2DLLLOAD\DLL for Darksiders\DINPUT8\DINPUT8\LibraryLoader.h(37,5): error C2664: 'HANDLE FindFirstFileA(LPCSTR,LPWIN32_FIND_DATAA)': cannot convert argument 1 from 'LPCWSTR' to 'LPCSTR'
+C:\Users\Loki\Desktop\DS2DLLLOAD\DLL for Darksiders\DINPUT8\DINPUT8\LibraryLoader.h(37,38): message : Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\fileapi.h(240,1): message : see declaration of 'FindFirstFileA'
+C:\Users\Loki\Desktop\DS2DLLLOAD\DLL for Darksiders\DINPUT8\DINPUT8\LibraryLoader.h(42,37): error C2664: 'LPWSTR lstrcatW(LPWSTR,LPCWSTR)': cannot convert argument 2 from 'CHAR [260]' to 'LPCWSTR'
+C:\Users\Loki\Desktop\DS2DLLLOAD\DLL for Darksiders\DINPUT8\DINPUT8\LibraryLoader.h(42,27): message : Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winbase.h(2864,1): message : see declaration of 'lstrcatW'
+C:\Users\Loki\Desktop\DS2DLLLOAD\DLL for Darksiders\DINPUT8\DINPUT8\LibraryLoader.h(64,38): error C2664: 'BOOL FindNextFileW(HANDLE,LPWIN32_FIND_DATAW)': cannot convert argument 2 from 'WIN32_FIND_DATA *' to 'LPWIN32_FIND_DATAW'
+C:\Users\Loki\Desktop\DS2DLLLOAD\DLL for Darksiders\DINPUT8\DINPUT8\LibraryLoader.h(64,33): message : Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\fileapi.h(333,1): message : see declaration of 'FindNextFileW'
+C:\Users\Loki\Desktop\DS2DLLLOAD\DLL for Darksiders\DINPUT8\DINPUT8\dllmain.cpp(47,38): error C2664: 'UINT GetSystemDirectoryA(LPSTR,UINT)': cannot convert argument 1 from 'wchar_t [260]' to 'LPSTR'
+C:\Users\Loki\Desktop\DS2DLLLOAD\DLL for Darksiders\DINPUT8\DINPUT8\dllmain.cpp(47,21): message : Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\sysinfoapi.h(237,1): message : see declaration of 'GetSystemDirectoryA'
+C:\Users\Loki\Desktop\DS2DLLLOAD\DLL for Darksiders\DINPUT8\DINPUT8\dllmain.cpp(49,28): error C2664: 'HMODULE LoadLibraryA(LPCSTR)': cannot convert argument 1 from 'wchar_t [260]' to 'LPCSTR'
+C:\Users\Loki\Desktop\DS2DLLLOAD\DLL for Darksiders\DINPUT8\DINPUT8\dllmain.cpp(49,21): message : Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\libloaderapi.h(593,1): message : see declaration of 'LoadLibraryA'
   stdafx.cpp
   Generating Code...
-  buffer.c
-  hde32.c
-  hde64.c
-  hook.c
-  trampoline.c
-  Generating Code...
-     Creating library C:\Users\Loki\Desktop\CE stuff\DINPUT8\DINPUT8\x64\Debug\DINPUT8.lib and object C:\Users\Loki\Desktop\CE stuff\DINPUT8\DINPUT8\x64\Debug\DINPUT8.exp
-DINPUT8.exp : warning LNK4070: /OUT:DINPUT8.dll directive in .EXP differs from output filename 'C:\Users\Loki\Desktop\CE stuff\DINPUT8\DINPUT8\x64\Debug\DINPUT8.exe'; ignoring directive
-  DINPUT8.vcxproj -> C:\Users\Loki\Desktop\CE stuff\DINPUT8\DINPUT8\x64\Debug\DINPUT8.exe

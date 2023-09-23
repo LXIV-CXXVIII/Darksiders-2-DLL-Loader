@@ -1,5 +1,6 @@
 #include "stdafx.h"
 
+#include <iostream>
 #include "dinput8\dinputWrapper.h"
 #include <Windows.h>
 #include "LibraryLoader.h"
@@ -7,35 +8,23 @@
 // Export DINPUT8
 tDirectInput8Create oDirectInput8Create;
 
-typedef int (WINAPI *ZWSETINFORMATIONTHREAD)(HANDLE, THREAD_INFORMATION_CLASS, PVOID, ULONG);
-
-// Pointer for calling original MessageBoxW.
-ZWSETINFORMATIONTHREAD fpZwSetInformationThread = NULL;
-
-DWORD WINAPI MainThread() {
+DWORD WINAPI MainThread(char* argv) {
 #ifdef DEBUG
 	FILE* fp;
 	AllocConsole();
 	SetConsoleTitleA("DLL Loader for Darksiders 2");
 	freopen_s(&fp, "CONOUT$", "w", stdout);
 #endif
-	load_dll_in_directory(dllModFolderName, dlls);
+
+	auto phModule = GetModuleHandle(L"Darksiders2.exe");
+	if (phModule) {
+		load_dll_in_directory(dllModFolderName, dlls);
+	};
 
 	return 0;
 }
 
-// Detour function
-int WINAPI tZwSetInformationThread(HANDLE threadHandle, THREAD_INFORMATION_CLASS threadInfoClass, PVOID threadInfo, ULONG threadInfoLength)
-{
-	if (threadInfoClass == 0x11) // ThreadHideFromDebugger
-	{
-		return 0x1; // return STATUS_SUCCESS as if we set the ThreadHideFromDebugger flag
-	}
-
-	return fpZwSetInformationThread(threadHandle, threadInfoClass, threadInfo, threadInfoLength); // return the original function if any other info class
-}
-
-BOOL InitInstance(HMODULE hModule)
+BOOL InitInstance(HMODULE hModule, char* argv)
 {
 	// Load the real dinput8.dll
 	HMODULE hMod;
@@ -48,7 +37,7 @@ BOOL InitInstance(HMODULE hModule)
 	// Call the main thread
     // CreateThread(nullptr, 0, (LPTHREAD_START_ROUTINE)&Begin, hModule, 0, nullptr);
 
-	MainThread();
+	MainThread(argv);
 
 	return true;
 }
@@ -66,7 +55,7 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpReserv
 	{
 	case DLL_PROCESS_ATTACH:
 		DisableThreadLibraryCalls(hModule);
-		InitInstance(hModule);
+		InitInstance(hModule, __argv[0]);
 		break;
 	case DLL_PROCESS_DETACH:
 		ExitInstance();

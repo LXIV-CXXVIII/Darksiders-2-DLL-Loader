@@ -2,6 +2,8 @@
 #include <Windows.h>
 #include <string>
 #include <vector>
+#include <iostream>
+#include <filesystem>
 
 std::wstring dllModFolderName = L"plugins";
 std::vector<HMODULE> dlls;
